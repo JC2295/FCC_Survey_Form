@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="container">
+        <header id="header">
+            <h1 id="title">Faculty of Technology Student Survey</h1>
+            <p id="description">Tell us about your course and career asperations in field of technology!</p>
+        </header>
+        <main id="main">
+            <form id="survey-form" action="">
+                <div class="input-container">
+                    <label for="name" id="name-label">Full Name: </label>
+                    <input type="text" id="name" placeholder="Enter Your Full Name">
+                </div>
+                <div class="input-container">
+                    <label for="email" id="email-label">Email Address: </label>
+                    <input type="email" id="email" placeholder="Enter Your Email Address">
+                </div>
+                <div class="input-container">
+                    <label for="course-type">Course Type: </label>
+                    <select name="course-type" id="dropdown2">
+                        <option value="Bachelors">Bachelors</option>
+                        <option value="Masters">Masters</option>
+                        <option value="PHD">PHD</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="course-title">Course Title: </label>
+                    <select name="course-title" id="dropdown">
+                        <option value="aerospace">Aerospace Engineering</option>
+                        <option value="electrical">Electrical Engineering</option>
+                        <option value="computer">Computer Engineering</option>
+                        <option value="civil">Civil Engineering</option>
+                        <option value="mechanaical">Mechanical Engineering</option>
+                        <option value="Mechatronic En">Mechatronic Engineering</option>
+                        <option value="Automotive Engineering">Automotive Engneering</option>
+                        <option value="Naval Engineering">Naval Engineering</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="number" id="number-label">Year of Study: </label>
+                    <input type="number" min="1" max="5" id="number" placeholder="No.">
+                </div>
+                <div class="input-container">
+                    <label for="status">Unemployed</label>
+                    <input type="radio" name="status" value="unemployed">
+                    <label for="status">Further Study</label>
+                    <input type="radio" name="status" value="further-study">
+                    <label for="status">Employed</label>
+                    <input type="radio" name="status" value="employed">
+                </div>
+                <div class="input-container">
+                    <label for="sectors">Commercial</label>
+                    <input type="checkbox" value="">
+                    <label for="sectors">Industrial</label>
+                    <input type="checkbox">
+                    <label for="sectors">Miltary/Defence</label>
+                    <input type="checkbox">
+                    <label for="sectors">Research & Development</label>
+                    <input type="checkbox">
+                </div>
+                <div class="input-container">
+                    <label for="locations"></label>
+                    <input type="checkbox">
+                    <label for="locations"></label>
+                    <input type="checkbox">
+                    <label for="locations"></label>
+                    <input type="checkbox">
+                </div>
+                <div class="input-container">
+                    <textarea name="" id="" placeholder="Enter Text"></textarea>
+                </div>
+                <button id="submit">Submit Form</button>
+            </form>
+        </main>
+        <footer id="footer">
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, nulla?</h1>
+        </footer>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    padding: 5%;
+    background-image: url("background.jpg");
+    background-size:cover;
+    background-repeat: repeat;
+    color: white;    
+}
+
+#main{
+    border: solid black 2px;
+    text-align: center;
+    background-color: midnightblue;
+}
+
+header{
+    text-align: center;
+    border: solid black 2px;
+    background-color: dimgray;
+    font-family: Arial;
+    border-radius: 40px 40px 0px 0px;
+    padding: 1rem;
+}
+
+footer{
+    border: solid black 2px;
+    background-color: dimgray;
+    border-radius: 0px 0pc 40px 40px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#survey-form{
+    padding: 10px;
+}
+
+.input-container{
+    border: solid black 1px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5rem;
+}
+
+#container{
+   margin: 0 auto;
+   padding: 0;  
+}
+
+button{
+    padding: 0.5rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    width: 20%;
+    height: 20%;
+}
