@@ -16,73 +16,129 @@
         </header>
         <main id="main">
             <form id="survey-form" action="">
-                <div class="input-container">
-                    <label for="name" id="name-label">Full Name: </label>
-                    <input type="text" id="name" placeholder="Enter Your Full Name">
+                <p>Enter your contact details below:</p>
+                <div class="flex-container">
+                    <div class="input-container">
+                        <label for="name" id="name-label">Full Name: </label>
+                        <input type="text" id="name" placeholder="Enter Your Full Name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="email" id="email-label">Email Address: </label>
+                        <input type="email" id="email" placeholder="Enter Your Email Address" required>
+                    </div>
                 </div>
-                <div class="input-container">
-                    <label for="email" id="email-label">Email Address: </label>
-                    <input type="email" id="email" placeholder="Enter Your Email Address">
+                <hr>
+                <p>Please enter your course details including year of study (Note: if doing Masters or PHD then leave year of study blank):</p>
+                <div>
+                    <div class="flex-container">
+                        <div class="input-container">
+                            <label for="course-type">Course Type: </label>
+                            <select name="course-type" id="dropdown2">
+                                <option value="Bachelors">Bachelors</option>
+                                <option value="Masters">Masters</option>
+                                <option value="PHD">PHD</option>
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <label for="course-title">Course Title: </label>
+                            <select name="course-title" id="dropdown">
+                                <option value="aerospace">Aerospace Engineering</option>
+                                <option value="electrical">Electrical Engineering</option>
+                                <option value="computer">Computer Engineering</option>
+                                <option value="civil">Civil Engineering</option>
+                                <option value="mechanaical">Mechanical Engineering</option>
+                                <option value="Mechatronic En">Mechatronic Engineering</option>
+                                <option value="Automotive Engineering">Automotive Engneering</option>
+                                <option value="Naval Engineering">Naval Engineering</option>
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <label for="number" id="number-label">Year of Study: </label>
+                            <input type="number" min="1" max="4" id="number" placeholder="No.">
+                        </div>
+                    </div>
                 </div>
-                <div class="input-container">
-                    <label for="course-type">Course Type: </label>
-                    <select name="course-type" id="dropdown2">
-                        <option value="Bachelors">Bachelors</option>
-                        <option value="Masters">Masters</option>
-                        <option value="PHD">PHD</option>
-                    </select>
+                <hr>
+                <p>Please enter your current employment status:</p>
+                <div class="flex-container">
+                    <div class="option">
+                        <label for="status">Unemployed</label>
+                        <input type="radio" name="status" value="unemployed">
+                    </div>
+                    <div class="option">
+                        <label for="status">Further Study</label>
+                        <input type="radio" name="status" value="further-study">
+                    </div>
+                    <div class="option">
+                        <label for="status">Employed</label>
+                        <input type="radio" name="status" value="employed">
+                    </div>
                 </div>
-                <div class="input-container">
-                    <label for="course-title">Course Title: </label>
-                    <select name="course-title" id="dropdown">
-                        <option value="aerospace">Aerospace Engineering</option>
-                        <option value="electrical">Electrical Engineering</option>
-                        <option value="computer">Computer Engineering</option>
-                        <option value="civil">Civil Engineering</option>
-                        <option value="mechanaical">Mechanical Engineering</option>
-                        <option value="Mechatronic En">Mechatronic Engineering</option>
-                        <option value="Automotive Engineering">Automotive Engneering</option>
-                        <option value="Naval Engineering">Naval Engineering</option>
-                    </select>
+                <hr>
+                <p>What industry you plan on pursuing your career in?</p>
+                <div class="flex-container">
+                    <div class="option">
+                        <label for="sectors">Commercial</label>
+                        <input type="checkbox" value="commercial">
+                    </div>
+                    <div class="option">
+                        <label for="sectors">Industrial</label>
+                        <input type="checkbox" value="industrial">
+                    </div>
+                    <div class="option">
+                        <label for="sectors">Miltary</label>
+                        <input type="checkbox" value="military">
+                    </div>
+                    <div class="option">
+                        <label for="sectors">Research & Development</label>
+                        <input type="checkbox" value="research">
+                    </div>
                 </div>
-                <div class="input-container">
-                    <label for="number" id="number-label">Year of Study: </label>
-                    <input type="number" min="1" max="5" id="number" placeholder="No.">
+                <hr>
+                <p>What locations are you willing to relocate to for employement?</p>
+                <div class="flex-container">
+                    <div class="option">
+                        <label for="locations">Europe</label>
+                        <input type="checkbox" value="europe">
+                    </div>
+                    <div class="option">
+                        <label for="locations">Asia</label>
+                        <input type="checkbox" value="asia">
+                    </div>
+                    <div class="option">
+                        <label for="locations">North America</label>
+                        <input type="checkbox" value="north-america">
+                    </div>
+                    <div class="option">
+                        <label for="locations">South America</label>
+                        <input type="checkbox" value="south-america">
+                    </div>
+                    <div class="option">
+                        <label for="locations">Australia</label>
+                        <input type="checkbox" value="australia">
+                    </div>
                 </div>
+                <hr>
+                <p>Please tell us what what we can do to improve this survey in the comment section below:</p>
                 <div class="input-container">
-                    <label for="status">Unemployed</label>
-                    <input type="radio" name="status" value="unemployed">
-                    <label for="status">Further Study</label>
-                    <input type="radio" name="status" value="further-study">
-                    <label for="status">Employed</label>
-                    <input type="radio" name="status" value="employed">
+                    <textarea name="comments" id="comments" placeholder="Enter Text"></textarea>
                 </div>
-                <div class="input-container">
-                    <label for="sectors">Commercial</label>
-                    <input type="checkbox" value="">
-                    <label for="sectors">Industrial</label>
-                    <input type="checkbox">
-                    <label for="sectors">Miltary/Defence</label>
-                    <input type="checkbox">
-                    <label for="sectors">Research & Development</label>
-                    <input type="checkbox">
-                </div>
-                <div class="input-container">
-                    <label for="locations"></label>
-                    <input type="checkbox">
-                    <label for="locations"></label>
-                    <input type="checkbox">
-                    <label for="locations"></label>
-                    <input type="checkbox">
-                </div>
-                <div class="input-container">
-                    <textarea name="" id="" placeholder="Enter Text"></textarea>
-                </div>
+                <hr>
                 <button id="submit">Submit Form</button>
             </form>
         </main>
         <footer id="footer">
-            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, nulla?</h1>
+            <p>If you experience any technical difficulities please contact the Univerity of [REDACTED] using the contact details below:</p>
+            <table>
+                <tr>
+                    <td>Phone Number: </td>
+                    <td>[REDACTED]</td>
+                </tr>
+                <tr>
+                    <td>Email Address: </td>
+                    <td>[REDACTED]</td>
+                </tr>
+            </table>
         </footer>
     </div>
 
