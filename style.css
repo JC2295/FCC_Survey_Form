@@ -120,22 +120,25 @@ label{
     width: 270px;
 }
 
-
 @media (max-width: 850px) {
     .flex-container{
         display: flex;
         flex-direction: column;
     }
+
     .option > label{
         width: 220px;
         
     }
+
     .option{
         padding: 0.5rem;
     }
+
     .input-container > label{
         width: 150px;
     }
+    
     .input-container{
         padding: 0.5rem;
     }
