@@ -8,13 +8,15 @@ body{
     background-image: url("background.jpg");
     background-size:cover;
     background-repeat: repeat;
-    color: white;    
-}
-
-#main{
-    text-align: center;
-    background-color: midnightblue;
-    border: solid white 2px;
+    color: white;  
+    width: auto;
+    max-width: 600px;
+    min-width: 400px;
+    height: auto;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  
 }
 
 header{
@@ -23,34 +25,77 @@ header{
     font-family: Arial;
     border-radius: 40px 40px 0px 0px;
     padding: 1rem;
+    border: solid black 4px;
 }
 
-footer{
-    background-color: dimgray;
-    border-radius: 0px 0pc 40px 40px;
+header > p{
+    margin-top: 1rem;
+}
+
+main{
+    background-color: rgba(25, 25, 112, 0.9);
+    border-left: solid black;
+    border-right: solid black;  
+    font-size: 1rem;
+}
+
+form{
     padding: 1rem;
-    text-align: center;
+    padding-top: 0;
+ 
+}
+
+form > p{
+    text-align: left; 
+}
+
+label{
+    width: 150px;
+    display: inline-block;
+    text-align: left;
+    padding-right: 0.5rem;
+}
+
+input, select, label{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif 
 }
 
 .input-container{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
+    padding: 1rem;
+    width: auto;
 }
 
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 1.5rem;
-    justify-content: space-between;
+.radio{
+    padding: 0.5rem;
+}
+
+.check{
+    padding: 0.5rem;
+}
+
+.text-box{
+    display: block;
+    width: auto;
+}
+
+#name, #email{
+    width: 300px;
+}
+
+textarea{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 5rem;
+    font-size: 1rem;
 }
 
 button{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
     padding: 1rem 4rem;
-    margin: 1rem;
     color: white;
     background-color: green;
     font-size: 2rem;
@@ -62,28 +107,12 @@ button:hover{
     color: black;
 }
 
-input, label, select{
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    display: inline-block;
-}
-
-#container{
-    width: auto;
-    max-width: 850px;
-    min-width: 360px;
-    height: auto;
-    margin: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-p{
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
+footer{
+    background-color: dimgray;
+    border-radius: 0px 0pc 40px 40px;
+    padding: 1rem;
+    text-align: center;
+    border: solid black 4px;
 }
 
 table{
@@ -96,50 +125,7 @@ td{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-label{
-    padding: 0 0.5rem;
-}
 
-#comments{
-    margin: 1rem;
-    width:100%;
-    height: 5rem;
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+/*@media (max-width: 850px) {
 
-#description{
-    text-align: center;
-}
-
-#name{
-    width: 270px;
-}
-
-#email{
-    width: 270px;
-}
-
-@media (max-width: 850px) {
-    .flex-container{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .option > label{
-        width: 220px;
-        
-    }
-
-    .option{
-        padding: 0.5rem;
-    }
-
-    .input-container > label{
-        width: 150px;
-    }
-    
-    .input-container{
-        padding: 0.5rem;
-    }
-}
+}*/
