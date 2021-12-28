@@ -1,3 +1,4 @@
+/*SETUP*/
 *{
     margin: 0 auto;
     padding: 0;
@@ -9,15 +10,20 @@ body{
     background-size:cover;
     background-repeat: repeat;
     color: white;  
+    padding-top: 2rem;
+    padding-bottom: 2rem;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+.container{
     width: auto;
     max-width: 600px;
     min-width: 400px;
     height: auto;
     margin: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;  
-    font-family:Verdana, Geneva, Tahoma, sans-serif;  
 }
+
+/*HEADER*/
 
 header{
     text-align: center;
@@ -32,11 +38,14 @@ header > p{
     margin-top: 1rem;
 }
 
+/*MAIN*/
+
 main{
     background-color: rgba(25, 25, 112, 0.9);
     border-left: solid black;
     border-right: solid black;  
     font-size: 1rem;
+    padding-top: 1rem;
 }
 
 form{
@@ -45,8 +54,15 @@ form{
  
 }
 
-form > p{
-    text-align: left; 
+fieldset legend{
+    text-align: center;
+    padding: 0 15px;
+}
+
+fieldset{
+    margin-bottom: 1rem;
+    border:none;
+    border-top: solid white 2px;
 }
 
 label{
@@ -106,6 +122,8 @@ button:hover{
     background-color: lightgreen;
     color: black;
 }
+
+/*FOOTER*/
 
 footer{
     background-color: dimgray;
