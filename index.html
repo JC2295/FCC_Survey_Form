@@ -8,122 +8,114 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Update Responsiveness-->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <div class="container">
             <header id="header">
                 <h1 id="title">Faculty of Technology Student Survey</h1>
-                <p id="description">Tell us about your course and career asperations in field of technology!</p>
+                <p id="description">Please fill out our student/alumni survey including details about your current/previous course, career status and  aspirations for the future.</p>
             </header>
             <main>
                 <form id="survey-form" action="">
-                    <fieldset>
+                    <fieldset class="one">
                         <legend>Contact Details:</legend>
-                        <div class="input-container">
-                            <label for="name" id="name-label">Full Name: </label>
+                        <label for="name" id="name-label">
+                            Full Name: 
                             <input type="text" id="name" placeholder="Enter Your Full Name" required>
-                        </div>
-                        <div class="input-container">
-                            <label for="email" id="email-label">Email Address: </label>
+                        </label>
+                        <label for="email" id="email-label">
+                            Email Address:
                             <input type="email" id="email" placeholder="Enter Your Email Address" required>
-                        </div> 
+                        </label>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="two">
                         <legend>Course Details</legend>
-                        <div class="input-container">
-                            <label for="course-type">Course Type: </label>
+                        <label for="course-type">
+                            Course Type: 
                             <select name="course-type" id="dropdown2">
                                 <option value="Bachelors">Bachelors</option>
                                 <option value="Masters">Masters</option>
-                                <option value="PHD">PHD</option>
+                                <option value="PHD">PHD</option>  
                             </select>
-                        </div>
-                        <div class="input-container">
-                            <label for="course-title">Course Title: </label>
+                        </label>
+                        <label for="course-title">
+                            Course Title: 
                             <select name="course-title" id="dropdown">
+                                <option value="">(Select Course)</option>
                                 <option value="aerospace">Aerospace Engineering</option>
                                 <option value="electrical">Electrical Engineering</option>
                                 <option value="computer">Computer Engineering</option>
                                 <option value="civil">Civil Engineering</option>
                                 <option value="mechanaical">Mechanical Engineering</option>
-                                <option value="Mechatronic En">Mechatronic Engineering</option>
-                                <option value="Automotive Engineering">Automotive Engneering</option>
-                                <option value="Naval Engineering">Naval Engineering</option>
+                                <option value="mechatronic">Mechatronic Engineering</option>
+                                <option value="automotive">Automotive Engneering</option>
+                                <option value="naval">Naval Engineering</option>
                             </select>
-                        </div>
-                        <div class="input-container" id="year">
-                            <label for="number" id="number-label">Year of Study: </label>
+                        </label>
+                        <label for="number" id="number-label">
+                            Year of Study: 
                             <input type="number" min="1" max="4" id="number" placeholder="No.">
-                        </div>
+                        </label>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="three">
                         <legend>Employment status</legend>
-                        <div class="input-container">
-                            <div class="radio">
-                                <label for="unemployed">Unemployed</label>
-                                <input type="radio" name="employment-status" value="unemployed" id="unemployed">
-                            </div>
-                            <div class="radio">
-                                <label for="further-study">Further Study</label>
-                                <input type="radio" name="employment-status" value="further-study" id="further-study">
-                            </div>
-                            <div class="radio">
-                                <label for="employed">Employed</label>
-                                <input type="radio" name="employment-status" value="employed" id="employed" >
-                            </div>
-                        </div>
+                        <label>
+                            <input type="radio" name="employment-status" value="unemployed">
+                            Unemployed
+                        </label>
+                        <label>
+                            <input type="radio" name="employment-status" value="further-study">
+                            Further Study
+                        </label>
+                        <label>
+                            <input type="radio" name="employment-status" value="employed">
+                            Employed
+                        </label>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="four">
                         <legend>Industry</legend>
-                        <div class="input-container">
-                            <div class="check">
-                                <label for="sectors">Commercial</label>
-                                <input type="checkbox" value="commercial">
-                            </div>
-                            <div class="check">
-                                <label for="industrial">Industrial</label>
-                                <input type="checkbox" value="industrial" id="industrial">
-                            </div>
-                            <div class="check">
-                                <label for="sectors">Miltary</label>
-                                <input type="checkbox" value="military">
-                            </div>
-                            <div class="check">
-                                <label for="sectors">Research & Development</label>
-                                <input type="checkbox" value="research">
-                            </div>
-                        </div>
+                        <label>
+                            <input type="checkbox" value="commercial">
+                            Commercial
+                        </label>
+                        <label>
+                            <input type="checkbox" value="industrial">
+                            Industrial
+                        </label>
+                        <label>
+                            <input type="checkbox" value="military">
+                            Miltary
+                        </label>    
+                        <label>
+                            <input type="checkbox" value="research">
+                            Research & Development
+                        </label>    
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="five">
                         <legend>Employement Locations</legend>
-                        <div class="input-container">
-                            <div class="check">
-                                <label for="locations">Europe</label>
-                                <input type="checkbox" value="europe">
-                            </div>
-                            <div class="check">
-                                <label for="locations">Asia</label>
-                                <input type="checkbox" value="asia">
-                            </div>
-                            <div class="check">
-                                <label for="locations">North America</label>
-                                <input type="checkbox" value="north-america">
-                            </div>
-                            <div class="check">
-                                <label for="locations">South America</label>
-                                <input type="checkbox" value="south-america">
-                            </div>
-                            <div class="check">
-                                <label for="locations">Australia</label>
-                                <input type="checkbox" value="australia">
-                            </div>
-                        </div>
+                        <label>
+                            <input type="checkbox" value="europe">
+                            Europe
+                        </label>
+                        <label>
+                            <input type="checkbox" value="asia">
+                            Asia  
+                        </label>                    
+                        <label>
+                            <input type="checkbox" value="north-america">
+                            North America
+                        </label>
+                        <label>
+                            <input type="checkbox" value="south-america">
+                            South America
+                        </label>
+                        <label>
+                            <input type="checkbox" value="australia"> 
+                            Australia
+                        </label> 
                     </fieldset>
-                    <fieldset>
-                        <legend>Tell us how we can improve this survey in the comment section below</legend>
-                        <div class="input-container text-box">
-                            <textarea name="comments" id="comments" placeholder="Enter Text"></textarea>
-                        </div>
+                    <fieldset class="five">
+                        <legend>Summary of Career</legend>
+                        <textarea name="comments" id="comments" placeholder="Enter Text"></textarea>
                     </fieldset>
                     <button id="submit">Submit Form</button>
                 </form>
